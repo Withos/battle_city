@@ -33,7 +33,7 @@ TILESCENTERS = []
 
 for i in range(WIDTHTILES):
     for j in range(HEIGHTTILES):
-        TILESCENTERS.append([(i * TILE) * SCALE + PLAYGROUNDLEFT, (j * TILE) * SCALE + PLAYGROUNDTOP])
+        TILESCENTERS.append([(i * TILE + TILE/2) * SCALE + PLAYGROUNDLEFT, (j * TILE) * SCALE + PLAYGROUNDTOP])
 
 BULLETSPEED = SPEED * 3
 UP = 1
@@ -58,3 +58,23 @@ ENEMIES = 2
 SLOW = 0.5
 NORMAL = 1
 FAST = 1.5
+
+#JSON constants
+
+LEVELS_PATH = "./levels"
+LEVELS_PREFIX = "level_"
+
+PLAYER_KEY = "player"
+TILES_KEY = "tiles"
+LOCATION_X_KEY = "locationX"
+LOCATION_Y_KEY = "locationY"
+TYPE_KEY = "type"
+ENEMIES_KEY = "enemies"
+
+BRICK_TILE_TYPE = "brick"
+STEEL_TILE_TYPE = "steel"
+CASTLE_TILE_TYPE = "castle"
+
+BASIC_ENEMY_TYPE = "basic"
+POWER_ENEMY_TYPE = "power"
+SPEED_ENEMY_TYPE = "speed"

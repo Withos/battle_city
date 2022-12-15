@@ -1,0 +1,24 @@
+{
+	"name": "Iran",
+	"tiles":
+	[
+		{
+		"type": "brick",
+		"locationX": 1,
+		"locationY" : 1
+		}
+	],
+	"player":
+		{
+		"locationX": 5,
+		"locationY" : 5
+		},
+	"enemies":
+	[
+		{
+		"type": "basic",
+		"locationX": 6,
+		"locationY" : 8
+		}
+	]
+}
